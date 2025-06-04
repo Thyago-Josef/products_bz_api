@@ -17,6 +17,8 @@ public class Products {
     private int pontuation;
     private String barcode;
 
+    private String email;
+
 
     public Products(Long idProduct, String name, String category, String description, String image, int pontuation, String barcode) {
         this.idProduct = idProduct;
@@ -26,6 +28,17 @@ public class Products {
         this.image = image;
         this.pontuation = pontuation;
         this.barcode = barcode;
+    }
+
+    public Products(Long idProduct, String name, String category, String description, String image, int pontuation, String barcode, String email) {
+        this.idProduct = idProduct;
+        this.name = name;
+        this.category = category;
+        this.description = description;
+        this.image = image;
+        this.pontuation = pontuation;
+        this.barcode = barcode;
+        this.email = email;
     }
 
     public Products() {
@@ -66,8 +79,9 @@ public class Products {
 
     public String getImage() {
         return image;
-
-
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getPontuation() {
@@ -88,4 +102,13 @@ public class Products {
 
     }
 
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

@@ -50,4 +50,8 @@ public class ProductService {
         return productMapper.toDTO(productRepository.findByBarcode(barcode));
     }
 
+    public Iterable<ProductsDTO> findAllProductsByUser(String email) {
+
+        return productRepository.findAllProductsByUser(email);
+    }
 }

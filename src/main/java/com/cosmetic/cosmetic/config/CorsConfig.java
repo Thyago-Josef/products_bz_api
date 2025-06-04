@@ -1,4 +1,4 @@
-package com.cosmetic.cosmetic;
+package com.cosmetic.cosmetic.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
